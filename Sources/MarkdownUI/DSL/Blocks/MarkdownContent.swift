@@ -64,6 +64,10 @@ public protocol MarkdownContentProtocol {
 
 public class MarkdownContentAutoUpdate: ObservableObject {
     @Published public var content: MarkdownContent?
+    
+    public init(content: MarkdownContent? = nil) {
+        self.content = content
+    }
 }
 
 public struct MarkdownContent: Equatable, MarkdownContentProtocol {

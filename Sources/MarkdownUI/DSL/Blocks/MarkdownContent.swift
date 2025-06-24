@@ -59,6 +59,13 @@ public protocol MarkdownContentProtocol {
 ///   }
 /// }
 /// ```
+///
+///
+
+public class MarkdownContentAutoUpdate: ObservableObject {
+    @Published public var content: MarkdownContent?
+}
+
 public struct MarkdownContent: Equatable, MarkdownContentProtocol {
   /// Returns a Markdown content value with the sum of the contents of all the container blocks
   /// present in this content.

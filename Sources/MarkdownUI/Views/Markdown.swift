@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 /// A view that displays read-only Markdown content.
 ///
@@ -195,7 +196,8 @@ public struct Markdown: View {
     private var content: MarkdownContent
     private let baseURL: URL?
     private let imageBaseURL: URL?
-    var callback: (() -> Void)?
+    
+    @ObservedObject var autoUpdatingContent: MarkdownContentAutoUpdate
     
     /// Creates a Markdown view from a Markdown content value.
     /// - Parameters:
@@ -208,6 +210,8 @@ public struct Markdown: View {
         self.content = content
         self.baseURL = baseURL
         self.imageBaseURL = imageBaseURL ?? baseURL
+        self.autoUpdatingContent = MarkdownContentAutoUpdate()
+        self.autoUpdatingContent.content = content
     }
     
     public var body: some View {
@@ -237,7 +241,7 @@ extension Markdown {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: @escaping () -> Void) {
+    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil) {
         self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL)
     }
     

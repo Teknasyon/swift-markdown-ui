@@ -214,6 +214,10 @@ public struct Markdown: View {
         self.autoUpdatingContent.content = content
     }
     
+    public func update(markdown: String) {
+        self.autoUpdatingContent.content = .init(markdown)
+    }
+    
     public var body: some View {
         TextStyleAttributesReader { attributes in
             BlockSequence(self.blocks)

@@ -206,16 +206,11 @@ public struct Markdown: View {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil) {
+    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil, contentAutoUpdate: MarkdownContentAutoUpdate) {
         self.content = content
         self.baseURL = baseURL
         self.imageBaseURL = imageBaseURL ?? baseURL
-        self.autoUpdatingContent = MarkdownContentAutoUpdate()
-        self.autoUpdatingContent.content = content
-    }
-    
-    public func update(markdown: String) {
-        self.autoUpdatingContent.content = .init(markdown)
+        self.autoUpdatingContent = contentAutoUpdate
     }
     
     public var body: some View {
@@ -246,7 +241,7 @@ extension Markdown {
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
     public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil) {
-        self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL)
+        self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: MarkdownContent(markdown)))
     }
     
     /// Creates a Markdown view composed of any number of blocks.
@@ -292,6 +287,6 @@ extension Markdown {
         callback: @escaping () -> Void,
         @MarkdownContentBuilder content: () -> MarkdownContent
     ) {
-        self.init(content(), baseURL: baseURL, imageBaseURL: imageBaseURL)
+        self.init(content(), baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: content()))
     }
 }

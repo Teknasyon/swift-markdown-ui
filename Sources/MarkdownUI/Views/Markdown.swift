@@ -197,7 +197,7 @@ public struct Markdown: View {
     private let baseURL: URL?
     private let imageBaseURL: URL?
     
-    @ObservedObject var autoUpdatingContent: MarkdownContentAutoUpdate
+    @ObservedObject public var autoUpdatingContent: MarkdownContentAutoUpdate
     
     /// Creates a Markdown view from a Markdown content value.
     /// - Parameters:

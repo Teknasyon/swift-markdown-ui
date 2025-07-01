@@ -193,7 +193,6 @@ public struct Markdown: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.theme.text) private var text
     
-    private var content: MarkdownContent
     private let baseURL: URL?
     private let imageBaseURL: URL?
     
@@ -206,8 +205,7 @@ public struct Markdown: View {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil, contentAutoUpdate: MarkdownContentAutoUpdate) {
-        self.content = content
+    public init(baseURL: URL? = nil, imageBaseURL: URL? = nil, contentAutoUpdate: MarkdownContentAutoUpdate) {
         self.baseURL = baseURL
         self.imageBaseURL = imageBaseURL ?? baseURL
         self.autoUpdatingContent = contentAutoUpdate
@@ -228,7 +226,7 @@ public struct Markdown: View {
     }
     
     private var blocks: [BlockNode] {
-        self.content.blocks.filterImagesMatching(colorScheme: self.colorScheme)
+        self.autoUpdatingContent.content?.blocks.filterImagesMatching(colorScheme: self.colorScheme) ?? []
     }
 }
 
@@ -241,7 +239,7 @@ extension Markdown {
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
     public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil) {
-        self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: MarkdownContent(markdown)))
+        self.init(baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: MarkdownContent(markdown)))
     }
     
     /// Creates a Markdown view composed of any number of blocks.
@@ -287,6 +285,6 @@ extension Markdown {
         callback: @escaping () -> Void,
         @MarkdownContentBuilder content: () -> MarkdownContent
     ) {
-        self.init(content(), baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: content()))
+        self.init(baseURL: baseURL, imageBaseURL: imageBaseURL, contentAutoUpdate: MarkdownContentAutoUpdate(content: content()))
     }
 }

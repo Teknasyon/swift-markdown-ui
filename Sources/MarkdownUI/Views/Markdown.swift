@@ -221,7 +221,6 @@ public struct Markdown: View {
         .environment(\.baseURL, self.baseURL)
         .environment(\.imageBaseURL, self.imageBaseURL)
         .markdownTheme(.gtc)
-        .padding(.vertical, 16.0)
         .padding(.horizontal, 8.0)
     }
     

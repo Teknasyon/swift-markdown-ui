@@ -95,10 +95,9 @@ extension Theme {
         }
         .paragraph { configuration in
             configuration.label
+                .fixedSize(horizontal: false, vertical: true)
                 .relativeLineSpacing(.em(0.25))
                 .markdownMargin(top: 0, bottom: 16)
-                .lineLimit(nil)
-                .markdownSoftBreakMode(.lineBreak)
         }
         .blockquote { configuration in
             HStack(spacing: 0) {
@@ -109,10 +108,12 @@ extension Theme {
                     .markdownTextStyle { ForegroundColor(.secondaryText) }
                     .relativePadding(.horizontal, length: .em(1))
             }
+            .fixedSize(horizontal: false, vertical: true)
         }
         .codeBlock { configuration in
             ScrollView(.horizontal) {
                 configuration.label
+                    .fixedSize(horizontal: false, vertical: true)
                     .relativeLineSpacing(.em(0.225))
                     .markdownTextStyle {
                         FontFamilyVariant(.monospaced)
@@ -127,7 +128,6 @@ extension Theme {
         .listItem { configuration in
             configuration.label
                 .markdownMargin(top: .em(0.25))
-                .lineLimit(nil)
         }
         .taskListMarker { configuration in
             Image(systemName: configuration.isCompleted ? "checkmark.square.fill" : "square")
@@ -138,6 +138,7 @@ extension Theme {
         }
         .table { configuration in
             configuration.label
+                .fixedSize(horizontal: false, vertical: true)
                 .markdownTableBorderStyle(.init(color: .border))
                 .markdownTableBackgroundStyle(
                     .alternatingRows(Color.background, Color.secondaryBackground)
@@ -152,6 +153,7 @@ extension Theme {
                     }
                     BackgroundColor(nil)
                 }
+                .fixedSize(horizontal: false, vertical: true)
                 .padding(.vertical, 6)
                 .padding(.horizontal, 13)
                 .relativeLineSpacing(.em(0.25))

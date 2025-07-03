@@ -95,8 +95,8 @@ extension Theme {
         }
         .paragraph { configuration in
             configuration.label
-                .frame(maxWidth: .infinity, alignment: .leading)
                 .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .relativeLineSpacing(.em(0.25))
                 .markdownMargin(top: 0, bottom: 16)
         }
@@ -129,8 +129,8 @@ extension Theme {
         .listItem { configuration in
             configuration.label
                 .markdownMargin(top: .em(0.25))
-                .frame(maxWidth: .infinity, alignment: .leading)
                 .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
         .taskListMarker { configuration in
             Image(systemName: configuration.isCompleted ? "checkmark.square.fill" : "square")

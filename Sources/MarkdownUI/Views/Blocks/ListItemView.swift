@@ -40,6 +40,7 @@ struct ListItemView: View {
         .readWidth(column: 0)
         .frame(width: self.markerWidth, alignment: .trailing)
     }
+    .lineLimit(nil)
     #if os(visionOS)
       .labelStyle(BulletItemStyle())
     #endif

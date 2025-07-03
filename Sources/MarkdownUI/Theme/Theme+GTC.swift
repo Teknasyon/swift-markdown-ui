@@ -98,6 +98,7 @@ extension Theme {
                 .relativeLineSpacing(.em(0.25))
                 .markdownMargin(top: 0, bottom: 16)
                 .lineLimit(nil)
+                .markdownSoftBreakMode(.lineBreak)
         }
         .blockquote { configuration in
             HStack(spacing: 0) {
@@ -126,7 +127,7 @@ extension Theme {
         .listItem { configuration in
             configuration.label
                 .markdownMargin(top: .em(0.25))
-                .lineLimit(nil)
+                .fixedSize(horizontal: true, vertical: false)
         }
         .taskListMarker { configuration in
             Image(systemName: configuration.isCompleted ? "checkmark.square.fill" : "square")

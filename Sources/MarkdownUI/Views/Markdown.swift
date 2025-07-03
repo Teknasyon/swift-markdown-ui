@@ -218,6 +218,7 @@ public struct Markdown: View {
                 .foregroundColor(attributes.foregroundColor)
                 .background(attributes.backgroundColor)
         }
+        .fixedSize(horizontal: false, vertical: true)
         .textStyle(self.text)
         .environment(\.baseURL, self.baseURL)
         .environment(\.imageBaseURL, self.imageBaseURL)

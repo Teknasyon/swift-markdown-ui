@@ -127,7 +127,7 @@ extension Theme {
         .listItem { configuration in
             configuration.label
                 .markdownMargin(top: .em(0.25))
-                .fixedSize(horizontal: false, vertical: true)
+                .fixedSize(horizontal: true, vertical: false)
         }
         .taskListMarker { configuration in
             Image(systemName: configuration.isCompleted ? "checkmark.square.fill" : "square")

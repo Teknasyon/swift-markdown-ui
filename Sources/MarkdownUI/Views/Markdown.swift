@@ -224,6 +224,7 @@ public struct Markdown: View {
         .markdownTheme(.gtc)
         .padding(.horizontal, 8.0)
         .padding(.top, 8.0)
+        .frame(width: 323.0)
         .onAppear {
             onUpdateContent?()
         }

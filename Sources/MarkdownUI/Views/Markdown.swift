@@ -195,6 +195,7 @@ public struct Markdown: View {
     
     private let baseURL: URL?
     private let imageBaseURL: URL?
+    public var onUpdateContent: (() -> Void)?
     
     @ObservedObject public var autoUpdatingContent: MarkdownContentAutoUpdate
     
@@ -222,6 +223,12 @@ public struct Markdown: View {
         .environment(\.imageBaseURL, self.imageBaseURL)
         .markdownTheme(.gtc)
         .padding(.horizontal, 8.0)
+        .onAppear {
+            onUpdateContent?()
+        }
+        .onChange(of: autoUpdatingContent) { _ in
+            onUpdateContent?()
+        }
     }
     
     private var blocks: [BlockNode] {

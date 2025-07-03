@@ -62,7 +62,11 @@ public protocol MarkdownContentProtocol {
 ///
 ///
 
-public class MarkdownContentAutoUpdate: ObservableObject {
+public class MarkdownContentAutoUpdate: ObservableObject, Equatable {
+    public static func == (lhs: MarkdownContentAutoUpdate, rhs: MarkdownContentAutoUpdate) -> Bool {
+        return lhs.content == rhs.content
+    }
+    
     @Published public var content: MarkdownContent?
     
     public init(content: MarkdownContent? = nil) {

@@ -223,6 +223,7 @@ public struct Markdown: View {
         .environment(\.imageBaseURL, self.imageBaseURL)
         .markdownTheme(.gtc)
         .padding(.horizontal, 8.0)
+        .padding(.top, 8.0)
         .onAppear {
             onUpdateContent?()
         }

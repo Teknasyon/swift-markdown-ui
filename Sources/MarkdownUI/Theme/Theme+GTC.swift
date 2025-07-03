@@ -129,7 +129,7 @@ extension Theme {
         .listItem { configuration in
             configuration.label
                 .markdownMargin(top: .em(0.25))
-                .fixedSize(horizontal: false, vertical: true)
+                .lineLimit(nil)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .taskListMarker { configuration in

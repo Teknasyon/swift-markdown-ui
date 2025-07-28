@@ -15,7 +15,7 @@ extension Theme {
             FontFamily(.custom("Inter"))
             ForegroundColor(.text)
             BackgroundColor(.clear)
-            FontSize(16.0)
+            FontSize(14.0)
         }
         .code {
             FontFamily(.system(.monospaced))
@@ -38,7 +38,7 @@ extension Theme {
                     .markdownMargin(top: 24, bottom: 16)
                     .markdownTextStyle {
                         FontWeight(.semibold)
-                        FontSize(32.0)
+                        FontSize(28.0)
                     }
                 Divider().overlay(Color.divider)
             }
@@ -51,7 +51,7 @@ extension Theme {
                     .markdownMargin(top: 24, bottom: 16)
                     .markdownTextStyle {
                         FontWeight(.semibold)
-                        FontSize(30.0)
+                        FontSize(24.0)
                     }
                 Divider().overlay(Color.divider)
             }
@@ -62,7 +62,7 @@ extension Theme {
                 .markdownMargin(top: 24, bottom: 16)
                 .markdownTextStyle {
                     FontWeight(.semibold)
-                    FontSize(24.0)
+                    FontSize(20.0)
                 }
         }
         .heading4 { configuration in
@@ -71,7 +71,7 @@ extension Theme {
                 .markdownMargin(top: 24, bottom: 16)
                 .markdownTextStyle {
                     FontWeight(.semibold)
-                    FontSize(20)
+                    FontSize(16)
                 }
         }
         .heading5 { configuration in
@@ -80,7 +80,7 @@ extension Theme {
                 .markdownMargin(top: 24, bottom: 16)
                 .markdownTextStyle {
                     FontWeight(.semibold)
-                    FontSize(18)
+                    FontSize(16)
                 }
         }
         .heading6 { configuration in
@@ -89,7 +89,7 @@ extension Theme {
                 .markdownMargin(top: 24, bottom: 16)
                 .markdownTextStyle {
                     FontWeight(.semibold)
-                    FontSize(17.0)
+                    FontSize(14.0)
                     ForegroundColor(.tertiaryText)
                 }
         }

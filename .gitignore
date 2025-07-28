@@ -65,7 +65,7 @@ Package.resolved
 # Carthage/Checkouts
 
 Carthage/Build/
-
+XCFrameworks/
 # Accio dependency management
 Dependencies/
 .accio/

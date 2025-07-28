@@ -58,7 +58,7 @@ public struct FontProperties: Hashable {
     #if os(macOS)
       return 13
     #elseif os(iOS)
-      return 17
+      return 14
     #elseif os(tvOS)
       return 29
     #elseif os(watchOS)

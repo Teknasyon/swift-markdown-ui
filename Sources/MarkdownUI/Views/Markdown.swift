@@ -192,10 +192,14 @@ public struct Markdown: View {
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.theme.text) private var text
     
+    private var totalWidth: CGFloat {
+        return UIScreen.main.bounds.width - 32.0 - 5.0 - 20.0 * 2.0
+    }
+    
     private var content: MarkdownContent
     private let baseURL: URL?
     private let imageBaseURL: URL?
-    var callback: (() -> Void)?
+    var callback: ((CGFloat) -> Void)?
     
     /// Creates a Markdown view from a Markdown content value.
     /// - Parameters:
@@ -204,10 +208,11 @@ public struct Markdown: View {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil) {
+    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)?) {
         self.content = content
         self.baseURL = baseURL
         self.imageBaseURL = imageBaseURL ?? baseURL
+        self.callback = callback
     }
     
     public var body: some View {
@@ -220,9 +225,17 @@ public struct Markdown: View {
         .environment(\.baseURL, self.baseURL)
         .environment(\.imageBaseURL, self.imageBaseURL)
         .markdownTheme(.gtc)
-        .padding(.vertical, 16.0)
-        .padding(.horizontal, 8.0)
-    }
+        .frame(maxWidth: totalWidth, alignment: .leading)
+        .overlay {
+            GeometryReader { geometry in
+                Color.clear
+                    .onChange(of: geometry.size) { newValue in
+                        print("------> GEOMETRY SIZE CHANGED: \(newValue)")
+                        callback?(newValue.height)
+                    }
+            }
+        }
+}
     
     private var blocks: [BlockNode] {
         self.content.blocks.filterImagesMatching(colorScheme: self.colorScheme)
@@ -237,8 +250,8 @@ extension Markdown {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: @escaping () -> Void) {
-        self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL)
+    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)?) {
+        self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL, callback: callback)
     }
     
     /// Creates a Markdown view composed of any number of blocks.
@@ -281,9 +294,9 @@ extension Markdown {
     public init(
         baseURL: URL? = nil,
         imageBaseURL: URL? = nil,
-        callback: @escaping () -> Void,
+        callback: ((CGFloat) -> Void)? = nil,
         @MarkdownContentBuilder content: () -> MarkdownContent
     ) {
-        self.init(content(), baseURL: baseURL, imageBaseURL: imageBaseURL)
+        self.init(content(), baseURL: baseURL, imageBaseURL: imageBaseURL, callback: callback)
     }
 }

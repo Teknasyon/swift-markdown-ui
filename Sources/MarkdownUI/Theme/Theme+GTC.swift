@@ -10,6 +10,10 @@ import SwiftUI
 
 extension Theme {
     
+    private static var totalWidth: CGFloat {
+        return UIScreen.main.bounds.width - 32.0 - 5.0 - 20.0 * 2.0
+    }
+    
     public static let gtc = Theme()
         .text {
             FontFamily(.custom("Inter"))
@@ -127,7 +131,8 @@ extension Theme {
         }
         .listItem { configuration in
             configuration.label
-                .markdownMargin(top: .em(0.25))
+                .markdownMargin(top: 8.0, bottom: 8.0)
+                .frame(maxWidth: totalWidth, alignment: .leading)
         }
         .taskListMarker { configuration in
             Image(systemName: configuration.isCompleted ? "checkmark.square.fill" : "square")

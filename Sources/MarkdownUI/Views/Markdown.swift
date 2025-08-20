@@ -208,7 +208,7 @@ public struct Markdown: View {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)?) {
+    public init(_ content: MarkdownContent, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)? = nil) {
         self.content = content
         self.baseURL = baseURL
         self.imageBaseURL = imageBaseURL ?? baseURL
@@ -250,7 +250,7 @@ extension Markdown {
     ///              URLs absolute. The default is `nil`.
     ///   - imageBaseURL: The base URL to use when resolving Markdown image URLs. If this value is `nil`, the initializer will
     ///                   determine image URLs using the `baseURL` parameter. The default is `nil`.
-    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)?) {
+    public init(_ markdown: String, baseURL: URL? = nil, imageBaseURL: URL? = nil, callback: ((CGFloat) -> Void)? = nil) {
         self.init(MarkdownContent(markdown), baseURL: baseURL, imageBaseURL: imageBaseURL, callback: callback)
     }
     

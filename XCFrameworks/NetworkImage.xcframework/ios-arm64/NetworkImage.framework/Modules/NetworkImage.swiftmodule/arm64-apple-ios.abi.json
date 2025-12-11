@@ -1,9 +1,4090 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "NO_MODULE",
-    "printedName": "NO_MODULE",
+    "name": "NetworkImage",
+    "printedName": "NetworkImage",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageSource",
+        "printedName": "ImageSource",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0B6SourceV3url10Foundation3URLVvp",
+            "mangledName": "$s12NetworkImage0B6SourceV3url10Foundation3URLVvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0B6SourceV3url10Foundation3URLVvg",
+                "mangledName": "$s12NetworkImage0B6SourceV3url10Foundation3URLVvg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scale",
+            "printedName": "scale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0B6SourceV5scale14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s12NetworkImage0B6SourceV5scale12CoreGraphics7CGFloatVvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0B6SourceV5scale14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s12NetworkImage0B6SourceV5scale12CoreGraphics7CGFloatVvg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageSource",
+                "printedName": "NetworkImage.ImageSource",
+                "usr": "s:12NetworkImage0B6SourceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage0B6SourceV3url5scaleAC10Foundation3URLV_04CoreF07CGFloatVtcfc",
+            "mangledName": "$s12NetworkImage0B6SourceV3url5scaleAC10Foundation3URLV_12CoreGraphics7CGFloatVtcfc",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0B6SourceV9hashValueSivp",
+            "mangledName": "$s12NetworkImage0B6SourceV9hashValueSivp",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0B6SourceV9hashValueSivg",
+                "mangledName": "$s12NetworkImage0B6SourceV9hashValueSivg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0B6SourceV4hash4intoys6HasherVz_tF",
+            "mangledName": "$s12NetworkImage0B6SourceV4hash4intoys6HasherVz_tF",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageSource",
+                "printedName": "NetworkImage.ImageSource",
+                "usr": "s:12NetworkImage0B6SourceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImageSource",
+                "printedName": "NetworkImage.ImageSource",
+                "usr": "s:12NetworkImage0B6SourceV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0B6SourceV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12NetworkImage0B6SourceV2eeoiySbAC_ACtFZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NetworkImage0B6SourceV",
+        "mangledName": "$s12NetworkImage0B6SourceV",
+        "moduleName": "NetworkImage",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkImage",
+        "printedName": "NetworkImage",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImage",
+                "printedName": "NetworkImage.NetworkImage<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImageAAV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImageAAV3url5scaleAByAA16_OptionalContentVy7SwiftUI0B0VGG10Foundation3URLVSg_04CoreI07CGFloatVtcAJRszrlufc",
+            "mangledName": "$s12NetworkImageAAV3url5scaleAByAA16_OptionalContentVy7SwiftUI0B0VGG10Foundation3URLVSg_12CoreGraphics7CGFloatVtcAJRszrlufc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 == NetworkImage._OptionalContent<SwiftUI.Image>>",
+            "sugared_genericSig": "<Content where Content == NetworkImage._OptionalContent<SwiftUI.Image>>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:transaction:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImage",
+                "printedName": "NetworkImage.NetworkImage<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImageAAV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "SwiftUI.Transaction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI11TransactionV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftUI.Image) -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImageAAV3url5scale11transaction7contentAByAA16_OptionalContentVyqd__GG10Foundation3URLVSg_04CoreI07CGFloatV7SwiftUI11TransactionVqd__AR0B0VctcAIRszAR4ViewRd__lufc",
+            "mangledName": "$s12NetworkImageAAV3url5scale11transaction7contentAByAA16_OptionalContentVyqd__GG10Foundation3URLVSg_12CoreGraphics7CGFloatV7SwiftUI11TransactionVqd__AR0B0VctcAIRszAR4ViewRd__lufc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 == NetworkImage._OptionalContent<τ_1_0>, τ_1_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content, I where Content == NetworkImage._OptionalContent<I>, I : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:transaction:content:placeholder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImage",
+                "printedName": "NetworkImage.NetworkImage<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImageAAV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "SwiftUI.Transaction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI11TransactionV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftUI.Image) -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_1_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImageAAV3url5scale11transaction7content11placeholderABy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_04CoreL07CGFloatVAH11TransactionVqd__AH0B0Vcqd_0_yctcAKRszAH4ViewRd__AhXRd_0_r0_lufc",
+            "mangledName": "$s12NetworkImageAAV3url5scale11transaction7content11placeholderABy7SwiftUI19_ConditionalContentVyqd__qd_0_GG10Foundation3URLVSg_12CoreGraphics7CGFloatVAH11TransactionVqd__AH0B0Vcqd_0_yctcAKRszAH4ViewRd__AhXRd_0_r0_lufc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1 where τ_0_0 == SwiftUI._ConditionalContent<τ_1_0, τ_1_1>, τ_1_0 : SwiftUI.View, τ_1_1 : SwiftUI.View>",
+            "sugared_genericSig": "<Content, I, P where Content == SwiftUI._ConditionalContent<I, P>, I : SwiftUI.View, P : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:transaction:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImage",
+                "printedName": "NetworkImage.NetworkImage<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImageAAV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "SwiftUI.Transaction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI11TransactionV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkImage.NetworkImageState) -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageState",
+                    "printedName": "NetworkImage.NetworkImageState",
+                    "usr": "s:12NetworkImage0aB5StateO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImageAAV3url5scale11transaction7contentAByxG10Foundation3URLVSg_04CoreG07CGFloatV7SwiftUI11TransactionVxAA0aB5StateOctcfc",
+            "mangledName": "$s12NetworkImageAAV3url5scale11transaction7contentAByxG10Foundation3URLVSg_12CoreGraphics7CGFloatV7SwiftUI11TransactionVxAA0aB5StateOctcfc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_ConditionalContent",
+                "printedName": "SwiftUI._ConditionalContent<SwiftUI.AnyView, SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyView",
+                    "printedName": "SwiftUI.AnyView",
+                    "usr": "s:7SwiftUI7AnyViewV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModifiedContent",
+                    "printedName": "SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TaskModifier",
+                        "printedName": "NetworkImage.TaskModifier<NetworkImage.ImageSource?>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "NetworkImage.ImageSource?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ImageSource",
+                                "printedName": "NetworkImage.ImageSource",
+                                "usr": "s:12NetworkImage0B6SourceV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:12NetworkImage12TaskModifierV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI15ModifiedContentV"
+                  }
+                ],
+                "usr": "s:7SwiftUI19_ConditionalContentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImageAAV4bodyQrvp",
+            "mangledName": "$s12NetworkImageAAV4bodyQrvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ConditionalContent",
+                    "printedName": "SwiftUI._ConditionalContent<SwiftUI.AnyView, SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModifiedContent",
+                        "printedName": "SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TaskModifier",
+                            "printedName": "NetworkImage.TaskModifier<NetworkImage.ImageSource?>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "NetworkImage.ImageSource?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ImageSource",
+                                    "printedName": "NetworkImage.ImageSource",
+                                    "usr": "s:12NetworkImage0B6SourceV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:12NetworkImage12TaskModifierV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI15ModifiedContentV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI19_ConditionalContentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImageAAV4bodyQrvg",
+                "mangledName": "$s12NetworkImageAAV4bodyQrvg",
+                "moduleName": "NetworkImage",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:scale:transaction:content:placeholder:fallback:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImage",
+                "printedName": "NetworkImage.NetworkImage<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImageAAV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.URL?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Transaction",
+                "printedName": "SwiftUI.Transaction",
+                "hasDefaultArg": true,
+                "usr": "s:7SwiftUI11TransactionV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftUI.Image) -> τ_1_1",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_1"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_1_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> τ_1_2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_1_2"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImageAAV3url5scale11transaction7content11placeholder8fallbackABy7SwiftUI19_ConditionalContentVyAKyqd__qd_0_Gqd_1_GG10Foundation3URLVSg_04CoreM07CGFloatVAI11TransactionVqd_0_AI0B0Vcqd__ycqd_1_yctcAMRszAI4ViewRd__AiZRd_0_AiZRd_1_r1_lufc",
+            "mangledName": "$s12NetworkImageAAV3url5scale11transaction7content11placeholder8fallbackABy7SwiftUI19_ConditionalContentVyAKyqd__qd_0_Gqd_1_GG10Foundation3URLVSg_12CoreGraphics7CGFloatVAI11TransactionVqd_0_AI0B0Vcqd__ycqd_1_yctcAMRszAI4ViewRd__AiZRd_0_AiZRd_1_r1_lufc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0, τ_1_0, τ_1_1, τ_1_2 where τ_0_0 == SwiftUI._ConditionalContent<SwiftUI._ConditionalContent<τ_1_0, τ_1_1>, τ_1_2>, τ_1_0 : SwiftUI.View, τ_1_1 : SwiftUI.View, τ_1_2 : SwiftUI.View>",
+            "sugared_genericSig": "<Content, P, I, F where Content == SwiftUI._ConditionalContent<SwiftUI._ConditionalContent<P, I>, F>, P : SwiftUI.View, I : SwiftUI.View, F : SwiftUI.View>",
+            "deprecated": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "Available"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NetworkImageAAV",
+        "mangledName": "$s12NetworkImageAAV",
+        "moduleName": "NetworkImage",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ConditionalContent",
+                    "printedName": "SwiftUI._ConditionalContent<SwiftUI.AnyView, SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyView",
+                        "printedName": "SwiftUI.AnyView",
+                        "usr": "s:7SwiftUI7AnyViewV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModifiedContent",
+                        "printedName": "SwiftUI.ModifiedContent<τ_0_0, NetworkImage.TaskModifier<NetworkImage.ImageSource?>>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TaskModifier",
+                            "printedName": "NetworkImage.TaskModifier<NetworkImage.ImageSource?>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Optional",
+                                "printedName": "NetworkImage.ImageSource?",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "ImageSource",
+                                    "printedName": "NetworkImage.ImageSource",
+                                    "usr": "s:12NetworkImage0B6SourceV"
+                                  }
+                                ],
+                                "usr": "s:Sq"
+                              }
+                            ],
+                            "usr": "s:12NetworkImage12TaskModifierV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI15ModifiedContentV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI19_ConditionalContentV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "_OptionalContent",
+        "printedName": "_OptionalContent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_OptionalContent",
+                "printedName": "NetworkImage._OptionalContent<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImage16_OptionalContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SwiftUI.Image) -> τ_0_0",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage16_OptionalContentV_7contentACyxG7SwiftUI0B0VSg_xAHctcfc",
+            "mangledName": "$s12NetworkImage16_OptionalContentV_7contentACyxG7SwiftUI0B0VSg_xAHctcfc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+            "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_ConditionalContent",
+                "printedName": "SwiftUI._ConditionalContent<τ_0_0, some SwiftUI.View>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:7SwiftUI19_ConditionalContentV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage16_OptionalContentV4bodyQrvp",
+            "mangledName": "$s12NetworkImage16_OptionalContentV4bodyQrvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ConditionalContent",
+                    "printedName": "SwiftUI._ConditionalContent<τ_0_0, some SwiftUI.View>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpaqueTypeArchetype",
+                        "printedName": "some SwiftUI.View",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "View",
+                            "printedName": "SwiftUI.View",
+                            "usr": "s:7SwiftUI4ViewP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:7SwiftUI19_ConditionalContentV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage16_OptionalContentV4bodyQrvg",
+                "mangledName": "$s12NetworkImage16_OptionalContentV4bodyQrvg",
+                "moduleName": "NetworkImage",
+                "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+                "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "_OptionalContent",
+                "printedName": "NetworkImage._OptionalContent<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImage16_OptionalContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage16_OptionalContentVAA7SwiftUI0B0VRszrlEyACyAFGAFSgcfc",
+            "mangledName": "$s12NetworkImage16_OptionalContentVAA7SwiftUI0B0VRszrlEyACyAFGAFSgcfc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 == SwiftUI.Image>",
+            "sugared_genericSig": "<Content where Content == SwiftUI.Image>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NetworkImage16_OptionalContentV",
+        "mangledName": "$s12NetworkImage16_OptionalContentV",
+        "moduleName": "NetworkImage",
+        "genericSig": "<τ_0_0 where τ_0_0 : SwiftUI.View>",
+        "sugared_genericSig": "<Content where Content : SwiftUI.View>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ConditionalContent",
+                    "printedName": "SwiftUI._ConditionalContent<τ_0_0, some SwiftUI.View>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OpaqueTypeArchetype",
+                        "printedName": "some SwiftUI.View",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "View",
+                            "printedName": "SwiftUI.View",
+                            "usr": "s:7SwiftUI4ViewP"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:7SwiftUI19_ConditionalContentV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkImageCache",
+        "printedName": "NetworkImageCache",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGImage",
+                    "printedName": "CoreGraphics.CGImage",
+                    "usr": "c:@T@CGImageRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0aB5CacheP5image3forSo10CGImageRefaSg10Foundation3URLV_tF",
+            "mangledName": "$s12NetworkImage0aB5CacheP5image3forSo10CGImageRefaSg10Foundation3URLV_tF",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkImage.NetworkImageCache>",
+            "sugared_genericSig": "<Self where Self : NetworkImage.NetworkImageCache>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setImage",
+            "printedName": "setImage(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0aB5CacheP03setB0_3forySo10CGImageRefa_10Foundation3URLVtF",
+            "mangledName": "$s12NetworkImage0aB5CacheP03setB0_3forySo10CGImageRefa_10Foundation3URLVtF",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkImage.NetworkImageCache>",
+            "sugared_genericSig": "<Self where Self : NetworkImage.NetworkImageCache>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageCache",
+                "printedName": "NetworkImage.DefaultNetworkImageCache",
+                "usr": "s:12NetworkImage07DefaultaB5CacheC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB5CachePA2A07DefaultabC0CRszrlE7defaultAEvpZ",
+            "mangledName": "$s12NetworkImage0aB5CachePA2A07DefaultabC0CRszrlE7defaultAEvpZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultNetworkImageCache",
+                    "printedName": "NetworkImage.DefaultNetworkImageCache",
+                    "usr": "s:12NetworkImage07DefaultaB5CacheC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0aB5CachePA2A07DefaultabC0CRszrlE7defaultAEvgZ",
+                "mangledName": "$s12NetworkImage0aB5CachePA2A07DefaultabC0CRszrlE7defaultAEvgZ",
+                "moduleName": "NetworkImage",
+                "genericSig": "<τ_0_0 where τ_0_0 == NetworkImage.DefaultNetworkImageCache>",
+                "sugared_genericSig": "<Self where Self == NetworkImage.DefaultNetworkImageCache>",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkImage0aB5CacheP",
+        "mangledName": "$s12NetworkImage0aB5CacheP",
+        "moduleName": "NetworkImage",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultNetworkImageCache",
+        "printedName": "DefaultNetworkImageCache",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(countLimit:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageCache",
+                "printedName": "NetworkImage.DefaultNetworkImageCache",
+                "usr": "s:12NetworkImage07DefaultaB5CacheC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage07DefaultaB5CacheC10countLimitACSi_tcfc",
+            "mangledName": "$s12NetworkImage07DefaultaB5CacheC10countLimitACSi_tcfc",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageCache",
+                "printedName": "NetworkImage.DefaultNetworkImageCache",
+                "usr": "s:12NetworkImage07DefaultaB5CacheC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage07DefaultaB5CacheC6sharedACvpZ",
+            "mangledName": "$s12NetworkImage07DefaultaB5CacheC6sharedACvpZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultNetworkImageCache",
+                    "printedName": "NetworkImage.DefaultNetworkImageCache",
+                    "usr": "s:12NetworkImage07DefaultaB5CacheC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage07DefaultaB5CacheC6sharedACvgZ",
+                "mangledName": "$s12NetworkImage07DefaultaB5CacheC6sharedACvgZ",
+                "moduleName": "NetworkImage",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreGraphics.CGImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGImage",
+                    "printedName": "CoreGraphics.CGImage",
+                    "usr": "c:@T@CGImageRef"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage07DefaultaB5CacheC5image3forSo10CGImageRefaSg10Foundation3URLV_tF",
+            "mangledName": "$s12NetworkImage07DefaultaB5CacheC5image3forSo10CGImageRefaSg10Foundation3URLV_tF",
+            "moduleName": "NetworkImage",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setImage",
+            "printedName": "setImage(_:for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage07DefaultaB5CacheC03setB0_3forySo10CGImageRefa_10Foundation3URLVtF",
+            "mangledName": "$s12NetworkImage07DefaultaB5CacheC03setB0_3forySo10CGImageRefa_10Foundation3URLVtF",
+            "moduleName": "NetworkImage",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkImage07DefaultaB5CacheC",
+        "mangledName": "$s12NetworkImage07DefaultaB5CacheC",
+        "moduleName": "NetworkImage",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkImageCache",
+            "printedName": "NetworkImageCache",
+            "usr": "s:12NetworkImage0aB5CacheP",
+            "mangledName": "$s12NetworkImage0aB5CacheP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "Import",
+        "name": "ImageIO",
+        "printedName": "ImageIO",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkImageLoader",
+        "printedName": "NetworkImageLoader",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0aB6LoaderP5image4fromSo10CGImageRefa10Foundation3URLV_tYaKF",
+            "mangledName": "$s12NetworkImage0aB6LoaderP5image4fromSo10CGImageRefa10Foundation3URLV_tYaKF",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : NetworkImage.NetworkImageLoader>",
+            "sugared_genericSig": "<Self where Self : NetworkImage.NetworkImageLoader>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "default",
+            "printedName": "default",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageLoader",
+                "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB6LoaderPA2A07DefaultabC0CRszrlE7defaultAEvpZ",
+            "mangledName": "$s12NetworkImage0aB6LoaderPA2A07DefaultabC0CRszrlE7defaultAEvpZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultNetworkImageLoader",
+                    "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                    "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0aB6LoaderPA2A07DefaultabC0CRszrlE7defaultAEvgZ",
+                "mangledName": "$s12NetworkImage0aB6LoaderPA2A07DefaultabC0CRszrlE7defaultAEvgZ",
+                "moduleName": "NetworkImage",
+                "genericSig": "<τ_0_0 where τ_0_0 == NetworkImage.DefaultNetworkImageLoader>",
+                "sugared_genericSig": "<Self where Self == NetworkImage.DefaultNetworkImageLoader>",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:12NetworkImage0aB6LoaderP",
+        "mangledName": "$s12NetworkImage0aB6LoaderP",
+        "moduleName": "NetworkImage",
+        "genericSig": "<τ_0_0 : AnyObject, τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Self : AnyObject, Self : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DefaultNetworkImageLoader",
+        "printedName": "DefaultNetworkImageLoader",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cache:session:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageLoader",
+                "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageCache",
+                "printedName": "any NetworkImage.NetworkImageCache",
+                "usr": "s:12NetworkImage0aB5CacheP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage07DefaultaB6LoaderC5cache7sessionAcA0aB5Cache_p_So12NSURLSessionCtcfc",
+            "mangledName": "$s12NetworkImage07DefaultaB6LoaderC5cache7sessionAcA0aB5Cache_p_So12NSURLSessionCtcfc",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageLoader",
+                "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage07DefaultaB6LoaderC6sharedACvpZ",
+            "mangledName": "$s12NetworkImage07DefaultaB6LoaderC6sharedACvpZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultNetworkImageLoader",
+                    "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                    "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC6sharedACvgZ",
+                "mangledName": "$s12NetworkImage07DefaultaB6LoaderC6sharedACvgZ",
+                "moduleName": "NetworkImage",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(cache:data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DefaultNetworkImageLoader",
+                "printedName": "NetworkImage.DefaultNetworkImageLoader",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageCache",
+                "printedName": "any NetworkImage.NetworkImageCache",
+                "usr": "s:12NetworkImage0aB5CacheP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Foundation.URL) async throws -> (Foundation.Data, Foundation.URLResponse)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Foundation.Data, Foundation.URLResponse)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "URLResponse",
+                        "printedName": "Foundation.URLResponse",
+                        "usr": "c:objc(cs)NSURLResponse"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage07DefaultaB6LoaderC5cache4dataAcA0aB5Cache_p_10Foundation4DataV_So13NSURLResponseCtAG3URLVYaKctcfc",
+            "mangledName": "$s12NetworkImage07DefaultaB6LoaderC5cache4dataAcA0aB5Cache_p_10Foundation4DataV_So13NSURLResponseCtAG3URLVYaKctcfc",
+            "moduleName": "NetworkImage",
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage07DefaultaB6LoaderC15unownedExecutorScevp",
+            "mangledName": "$s12NetworkImage07DefaultaB6LoaderC15unownedExecutorScevp",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage07DefaultaB6LoaderC15unownedExecutorScevg",
+                "mangledName": "$s12NetworkImage07DefaultaB6LoaderC15unownedExecutorScevg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGImage",
+                "printedName": "CoreGraphics.CGImage",
+                "usr": "c:@T@CGImageRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage07DefaultaB6LoaderC5image4fromSo10CGImageRefa10Foundation3URLV_tYaKF",
+            "mangledName": "$s12NetworkImage07DefaultaB6LoaderC5image4fromSo10CGImageRefa10Foundation3URLV_tYaKF",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkImage07DefaultaB6LoaderC",
+        "mangledName": "$s12NetworkImage07DefaultaB6LoaderC",
+        "moduleName": "NetworkImage",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "NetworkImageLoader",
+            "printedName": "NetworkImageLoader",
+            "usr": "s:12NetworkImage0aB6LoaderP",
+            "mangledName": "$s12NetworkImage0aB6LoaderP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkImageModel",
+        "printedName": "NetworkImageModel",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Environment",
+            "printedName": "Environment",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "transaction",
+                "printedName": "transaction",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Transaction",
+                    "printedName": "SwiftUI.Transaction",
+                    "usr": "s:7SwiftUI11TransactionV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV11transaction7SwiftUI11TransactionVvp",
+                "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV11transaction7SwiftUI11TransactionVvp",
+                "moduleName": "NetworkImage",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Transaction",
+                        "printedName": "SwiftUI.Transaction",
+                        "usr": "s:7SwiftUI11TransactionV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV11transaction7SwiftUI11TransactionVvg",
+                    "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV11transaction7SwiftUI11TransactionVvg",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "imageLoader",
+                "printedName": "imageLoader",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageLoader",
+                    "printedName": "any NetworkImage.NetworkImageLoader",
+                    "usr": "s:12NetworkImage0aB6LoaderP"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV11imageLoaderAA0abF0_pvp",
+                "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV11imageLoaderAA0abF0_pvp",
+                "moduleName": "NetworkImage",
+                "declAttributes": [
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageLoader",
+                        "printedName": "any NetworkImage.NetworkImageLoader",
+                        "usr": "s:12NetworkImage0aB6LoaderP"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV11imageLoaderAA0abF0_pvg",
+                    "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV11imageLoaderAA0abF0_pvg",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(transaction:imageLoader:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "NetworkImage.NetworkImageModel.Environment",
+                    "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Transaction",
+                    "printedName": "SwiftUI.Transaction",
+                    "usr": "s:7SwiftUI11TransactionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageLoader",
+                    "printedName": "any NetworkImage.NetworkImageLoader",
+                    "usr": "s:12NetworkImage0aB6LoaderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV11transaction11imageLoaderAE7SwiftUI11TransactionV_AA0abG0_ptcfc",
+                "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV11transaction11imageLoaderAE7SwiftUI11TransactionV_AA0abG0_ptcfc",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV",
+            "mangledName": "$s12NetworkImage0aB5ModelC11EnvironmentV",
+            "moduleName": "NetworkImage",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "source",
+                "printedName": "source",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NetworkImage.ImageSource?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSource",
+                        "printedName": "NetworkImage.ImageSource",
+                        "usr": "s:12NetworkImage0B6SourceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvp",
+                "mangledName": "$s12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvp",
+                "moduleName": "NetworkImage",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 0,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NetworkImage.ImageSource?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "NetworkImage.ImageSource",
+                            "usr": "s:12NetworkImage0B6SourceV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvg",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvg",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "NetworkImage.ImageSource?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ImageSource",
+                            "printedName": "NetworkImage.ImageSource",
+                            "usr": "s:12NetworkImage0B6SourceV"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvs",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvs",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvM",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV6sourceAA0B6SourceVSgvM",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "image",
+                "printedName": "image",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageState",
+                    "printedName": "NetworkImage.NetworkImageState",
+                    "usr": "s:12NetworkImage0aB5StateO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovp",
+                "mangledName": "$s12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovp",
+                "moduleName": "NetworkImage",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage"
+                ],
+                "fixedbinaryorder": 1,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovg",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovg",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovs",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV5imageAA0abD0Ovs",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV5imageAA0abD0OvM",
+                    "mangledName": "$s12NetworkImage0aB5ModelC5StateV5imageAA0abD0OvM",
+                    "moduleName": "NetworkImage",
+                    "implicit": true,
+                    "declAttributes": [
+                      "Transparent"
+                    ],
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(source:image:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NetworkImage.ImageSource?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ImageSource",
+                        "printedName": "NetworkImage.ImageSource",
+                        "usr": "s:12NetworkImage0B6SourceV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageState",
+                    "printedName": "NetworkImage.NetworkImageState",
+                    "hasDefaultArg": true,
+                    "usr": "s:12NetworkImage0aB5StateO"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12NetworkImage0aB5ModelC5StateV6source5imageAeA0B6SourceVSg_AA0abD0Otcfc",
+                "mangledName": "$s12NetworkImage0aB5ModelC5StateV6source5imageAeA0B6SourceVSg_AA0abD0Otcfc",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:12NetworkImage0aB5ModelC5StateVAEycfc",
+                "mangledName": "$s12NetworkImage0aB5ModelC5StateVAEycfc",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:12NetworkImage0aB5ModelC5StateV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s12NetworkImage0aB5ModelC5StateV2eeoiySbAE_AEtFZ",
+                "moduleName": "NetworkImage",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:12NetworkImage0aB5ModelC5StateV",
+            "mangledName": "$s12NetworkImage0aB5ModelC5StateV",
+            "moduleName": "NetworkImage",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "NetworkImage.NetworkImageModel.State",
+                "usr": "s:12NetworkImage0aB5ModelC5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB5ModelC5stateAC5StateVvp",
+            "mangledName": "$s12NetworkImage0aB5ModelC5stateAC5StateVvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "Custom"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0aB5ModelC5stateAC5StateVvg",
+                "mangledName": "$s12NetworkImage0aB5ModelC5stateAC5StateVvg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$state",
+            "printedName": "$state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<NetworkImage.NetworkImageModel.State>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB5ModelC6$state7Combine9PublishedV9PublisherVyAC5StateV_Gvp",
+            "mangledName": "$s12NetworkImage0aB5ModelC6$state7Combine9PublishedV9PublisherVyAC5StateV_Gvp",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<NetworkImage.NetworkImageModel.State>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0aB5ModelC6$state7Combine9PublishedV9PublisherVyAC5StateV_Gvg",
+                "mangledName": "$s12NetworkImage0aB5ModelC6$state7Combine9PublishedV9PublisherVyAC5StateV_Gvg",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "_state",
+            "printedName": "_state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Published",
+                "printedName": "Combine.Published<NetworkImage.NetworkImageModel.State>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "NetworkImage.NetworkImageModel.State",
+                    "usr": "s:12NetworkImage0aB5ModelC5StateV"
+                  }
+                ],
+                "usr": "s:7Combine9PublishedV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB5ModelC6_state33_43D7A5777EA66DF0FDE3C5F5537DE0A0LL7Combine9PublishedVyAC5StateVGvp",
+            "mangledName": "$s12NetworkImage0aB5ModelC6_state33_43D7A5777EA66DF0FDE3C5F5537DE0A0LL7Combine9PublishedVyAC5StateVGvp",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true
+          },
+          {
+            "kind": "Function",
+            "name": "onAppear",
+            "printedName": "onAppear(source:environment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NetworkImage.ImageSource?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageSource",
+                    "printedName": "NetworkImage.ImageSource",
+                    "usr": "s:12NetworkImage0B6SourceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "NetworkImage.NetworkImageModel.Environment",
+                "usr": "s:12NetworkImage0aB5ModelC11EnvironmentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0aB5ModelC8onAppear6source11environmentyAA0B6SourceVSg_AC11EnvironmentVtYaF",
+            "mangledName": "$s12NetworkImage0aB5ModelC8onAppear6source11environmentyAA0B6SourceVSg_AC11EnvironmentVtYaF",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "Final",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageModel",
+                "printedName": "NetworkImage.NetworkImageModel",
+                "usr": "s:12NetworkImage0aB5ModelC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage0aB5ModelCACycfc",
+            "mangledName": "$s12NetworkImage0aB5ModelCACycfc",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:12NetworkImage0aB5ModelC",
+        "mangledName": "$s12NetworkImage0aB5ModelC",
+        "moduleName": "NetworkImage",
+        "declAttributes": [
+          "Final"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NetworkImageState",
+        "printedName": "NetworkImageState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "empty",
+            "printedName": "empty",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkImage.NetworkImageState.Type) -> NetworkImage.NetworkImageState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageState",
+                    "printedName": "NetworkImage.NetworkImageState",
+                    "usr": "s:12NetworkImage0aB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkImage.NetworkImageState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkImage0aB5StateO5emptyyA2CmF",
+            "mangledName": "$s12NetworkImage0aB5StateO5emptyyA2CmF",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkImage.NetworkImageState.Type) -> (SwiftUI.Image, CoreFoundation.CGSize) -> NetworkImage.NetworkImageState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(SwiftUI.Image, CoreFoundation.CGSize) -> NetworkImage.NetworkImageState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(image: SwiftUI.Image, idealSize: CoreFoundation.CGSize)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Image",
+                            "printedName": "SwiftUI.Image",
+                            "usr": "s:7SwiftUI5ImageV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkImage.NetworkImageState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkImage0aB5StateO7successyAC7SwiftUI0B0V_So6CGSizeVtcACmF",
+            "mangledName": "$s12NetworkImage0aB5StateO7successyAC7SwiftUI0B0V_So6CGSizeVtcACmF",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NetworkImage.NetworkImageState.Type) -> NetworkImage.NetworkImageState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageState",
+                    "printedName": "NetworkImage.NetworkImageState",
+                    "usr": "s:12NetworkImage0aB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NetworkImage.NetworkImageState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageState",
+                        "printedName": "NetworkImage.NetworkImageState",
+                        "usr": "s:12NetworkImage0aB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:12NetworkImage0aB5StateO7failureyA2CmF",
+            "mangledName": "$s12NetworkImage0aB5StateO7failureyA2CmF",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SwiftUI.Image?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Image",
+                    "printedName": "SwiftUI.Image",
+                    "usr": "s:7SwiftUI5ImageV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage0aB5StateO5image7SwiftUI0B0VSgvp",
+            "mangledName": "$s12NetworkImage0aB5StateO5image7SwiftUI0B0VSgvp",
+            "moduleName": "NetworkImage",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "SwiftUI.Image?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Image",
+                        "printedName": "SwiftUI.Image",
+                        "usr": "s:7SwiftUI5ImageV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:12NetworkImage0aB5StateO5image7SwiftUI0B0VSgvg",
+                "mangledName": "$s12NetworkImage0aB5StateO5image7SwiftUI0B0VSgvg",
+                "moduleName": "NetworkImage",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageState",
+                "printedName": "NetworkImage.NetworkImageState",
+                "usr": "s:12NetworkImage0aB5StateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageState",
+                "printedName": "NetworkImage.NetworkImageState",
+                "usr": "s:12NetworkImage0aB5StateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage0aB5StateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s12NetworkImage0aB5StateO2eeoiySbAC_ACtFZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:12NetworkImage0aB5StateO",
+        "mangledName": "$s12NetworkImage0aB5StateO",
+        "moduleName": "NetworkImage",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "TaskModifier",
+        "printedName": "TaskModifier",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage12TaskModifierV2id33_89CA295498D00B43AE5A25C0EECB9934LLxvp",
+            "mangledName": "$s12NetworkImage12TaskModifierV2id33_89CA295498D00B43AE5A25C0EECB9934LLxvp",
+            "moduleName": "NetworkImage",
+            "isInternal": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 0,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "priority",
+            "printedName": "priority",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TaskPriority",
+                "printedName": "_Concurrency.TaskPriority",
+                "usr": "s:ScP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage12TaskModifierV8priority33_89CA295498D00B43AE5A25C0EECB9934LLScPvp",
+            "mangledName": "$s12NetworkImage12TaskModifierV8priority33_89CA295498D00B43AE5A25C0EECB9934LLScPvp",
+            "moduleName": "NetworkImage",
+            "isInternal": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "action",
+            "printedName": "action",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage12TaskModifierV6action33_89CA295498D00B43AE5A25C0EECB9934LLyyYacvp",
+            "mangledName": "$s12NetworkImage12TaskModifierV6action33_89CA295498D00B43AE5A25C0EECB9934LLyyYacvp",
+            "moduleName": "NetworkImage",
+            "isInternal": true,
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true
+          },
+          {
+            "kind": "Var",
+            "name": "_task",
+            "printedName": "_task",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "SwiftUI.State<_Concurrency.Task<(), Swift.Never>?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "_Concurrency.Task<(), Swift.Never>?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Task",
+                        "printedName": "_Concurrency.Task<(), Swift.Never>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Never",
+                            "printedName": "Swift.Never",
+                            "usr": "s:s5NeverO"
+                          }
+                        ],
+                        "usr": "s:ScT"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:7SwiftUI5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:12NetworkImage12TaskModifierV5_task33_89CA295498D00B43AE5A25C0EECB9934LL7SwiftUI5StateVyScTyyts5NeverOGSgGvp",
+            "mangledName": "$s12NetworkImage12TaskModifierV5_task33_89CA295498D00B43AE5A25C0EECB9934LL7SwiftUI5StateVyScTyyts5NeverOGSgGvp",
+            "moduleName": "NetworkImage",
+            "implicit": true,
+            "isInternal": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "hasStorage": true
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:priority:action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TaskModifier",
+                "printedName": "NetworkImage.TaskModifier<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:12NetworkImage12TaskModifierV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TaskPriority",
+                "printedName": "_Concurrency.TaskPriority",
+                "hasDefaultArg": true,
+                "usr": "s:ScP"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() async -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12NetworkImage12TaskModifierV2id8priority6actionACyxGx_ScPyyYactcfc",
+            "mangledName": "$s12NetworkImage12TaskModifierV2id8priority6actionACyxGx_ScPyyYactcfc",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+            "sugared_genericSig": "<T where T : Swift.Equatable>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "body",
+            "printedName": "body(content:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModifiedContent",
+                "printedName": "SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>, SwiftUI._AppearanceActionModifier>, SwiftUI._ValueActionModifier<τ_0_0>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModifiedContent",
+                    "printedName": "SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>, SwiftUI._AppearanceActionModifier>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModifiedContent",
+                        "printedName": "SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_ViewModifier_Content",
+                            "printedName": "SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "TaskModifier",
+                                "printedName": "NetworkImage.TaskModifier<τ_0_0>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "GenericTypeParam",
+                                    "printedName": "τ_0_0"
+                                  }
+                                ],
+                                "usr": "s:12NetworkImage12TaskModifierV"
+                              }
+                            ],
+                            "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_AppearanceActionModifier",
+                            "printedName": "SwiftUI._AppearanceActionModifier",
+                            "usr": "s:7SwiftUI25_AppearanceActionModifierV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI15ModifiedContentV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_AppearanceActionModifier",
+                        "printedName": "SwiftUI._AppearanceActionModifier",
+                        "usr": "s:7SwiftUI25_AppearanceActionModifierV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI15ModifiedContentV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_ValueActionModifier",
+                    "printedName": "SwiftUI._ValueActionModifier<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI20_ValueActionModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI15ModifiedContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_ViewModifier_Content",
+                "printedName": "SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TaskModifier",
+                    "printedName": "NetworkImage.TaskModifier<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:12NetworkImage12TaskModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:12NetworkImage12TaskModifierV4body7contentQr7SwiftUI05_ViewD8_ContentVyACyxGG_tF",
+            "mangledName": "$s12NetworkImage12TaskModifierV4body7contentQr7SwiftUI05_ViewD8_ContentVyACyxGG_tF",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+            "sugared_genericSig": "<T where T : Swift.Equatable>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:12NetworkImage12TaskModifierV",
+        "mangledName": "$s12NetworkImage12TaskModifierV",
+        "moduleName": "NetworkImage",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Equatable>",
+        "sugared_genericSig": "<T where T : Swift.Equatable>",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ViewModifier",
+            "printedName": "ViewModifier",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModifiedContent",
+                    "printedName": "SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>, SwiftUI._AppearanceActionModifier>, SwiftUI._ValueActionModifier<τ_0_0>>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ModifiedContent",
+                        "printedName": "SwiftUI.ModifiedContent<SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>, SwiftUI._AppearanceActionModifier>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ModifiedContent",
+                            "printedName": "SwiftUI.ModifiedContent<SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>, SwiftUI._AppearanceActionModifier>",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "_ViewModifier_Content",
+                                "printedName": "SwiftUI._ViewModifier_Content<NetworkImage.TaskModifier<τ_0_0>>",
+                                "children": [
+                                  {
+                                    "kind": "TypeNominal",
+                                    "name": "TaskModifier",
+                                    "printedName": "NetworkImage.TaskModifier<τ_0_0>",
+                                    "children": [
+                                      {
+                                        "kind": "TypeNominal",
+                                        "name": "GenericTypeParam",
+                                        "printedName": "τ_0_0"
+                                      }
+                                    ],
+                                    "usr": "s:12NetworkImage12TaskModifierV"
+                                  }
+                                ],
+                                "usr": "s:7SwiftUI21_ViewModifier_ContentV"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "_AppearanceActionModifier",
+                                "printedName": "SwiftUI._AppearanceActionModifier",
+                                "usr": "s:7SwiftUI25_AppearanceActionModifierV"
+                              }
+                            ],
+                            "usr": "s:7SwiftUI15ModifiedContentV"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "_AppearanceActionModifier",
+                            "printedName": "SwiftUI._AppearanceActionModifier",
+                            "usr": "s:7SwiftUI25_AppearanceActionModifierV"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI15ModifiedContentV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_ValueActionModifier",
+                        "printedName": "SwiftUI._ValueActionModifier<τ_0_0>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          }
+                        ],
+                        "usr": "s:7SwiftUI20_ValueActionModifierV"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI15ModifiedContentV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI12ViewModifierP",
+            "mangledName": "$s7SwiftUI12ViewModifierP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "NetworkImage"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLSession",
+        "printedName": "URLSession",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "imageLoading",
+            "printedName": "imageLoading(memoryCapacity:diskCapacity:timeoutInterval:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLSession",
+                "printedName": "Foundation.URLSession",
+                "usr": "c:objc(cs)NSURLSession"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So12NSURLSessionC12NetworkImageE12imageLoading14memoryCapacity04diskG015timeoutIntervalABSi_SiSdtFZ",
+            "mangledName": "$sSo12NSURLSessionC12NetworkImageE12imageLoading14memoryCapacity04diskG015timeoutIntervalABSi_SiSdtFZ",
+            "moduleName": "NetworkImage",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)NSURLSession",
+        "moduleName": "Foundation",
+        "isOpen": true,
+        "intro_iOS": "7.0",
+        "objc_name": "NSURLSession",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "View",
+        "printedName": "View",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "networkImageLoader",
+            "printedName": "networkImageLoader(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModifiedContent",
+                "printedName": "SwiftUI.ModifiedContent<τ_0_0, SwiftUI._EnvironmentKeyWritingModifier<any NetworkImage.NetworkImageLoader>>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "_EnvironmentKeyWritingModifier",
+                    "printedName": "SwiftUI._EnvironmentKeyWritingModifier<any NetworkImage.NetworkImageLoader>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NetworkImageLoader",
+                        "printedName": "any NetworkImage.NetworkImageLoader",
+                        "usr": "s:12NetworkImage0aB6LoaderP"
+                      }
+                    ],
+                    "usr": "s:7SwiftUI30_EnvironmentKeyWritingModifierV"
+                  }
+                ],
+                "usr": "s:7SwiftUI15ModifiedContentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_1_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7SwiftUI4ViewP12NetworkImageE07networkE6LoaderyQrqd__AD0deG0Rd__lF",
+            "mangledName": "$s7SwiftUI4ViewP12NetworkImageE07networkE6LoaderyQrqd__AD0deG0Rd__lF",
+            "moduleName": "NetworkImage",
+            "genericSig": "<τ_0_0, τ_1_0 where τ_0_0 : SwiftUI.View, τ_1_0 : NetworkImage.NetworkImageLoader>",
+            "sugared_genericSig": "<Self, T where Self : SwiftUI.View, T : NetworkImage.NetworkImageLoader>",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:7SwiftUI4ViewP",
+        "mangledName": "$s7SwiftUI4ViewP",
+        "moduleName": "SwiftUICore",
+        "genericSig": "<τ_0_0.Body : SwiftUI.View>",
+        "sugared_genericSig": "<Self.Body : SwiftUI.View>",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "Preconcurrency",
+          "TypeEraser",
+          "TypeEraser",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "Available",
+          "Available",
+          "Available",
+          "Available",
+          "Custom"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "EnvironmentValues",
+        "printedName": "EnvironmentValues",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "networkImageLoader",
+            "printedName": "networkImageLoader",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NetworkImageLoader",
+                "printedName": "any NetworkImage.NetworkImageLoader",
+                "usr": "s:12NetworkImage0aB6LoaderP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvp",
+            "mangledName": "$s7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvp",
+            "moduleName": "NetworkImage",
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageLoader",
+                    "printedName": "any NetworkImage.NetworkImageLoader",
+                    "usr": "s:12NetworkImage0aB6LoaderP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvg",
+                "mangledName": "$s7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvg",
+                "moduleName": "NetworkImage",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NetworkImageLoader",
+                    "printedName": "any NetworkImage.NetworkImageLoader",
+                    "usr": "s:12NetworkImage0aB6LoaderP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvs",
+                "mangledName": "$s7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvs",
+                "moduleName": "NetworkImage",
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvM",
+                "mangledName": "$s7SwiftUI17EnvironmentValuesV12NetworkImageE07networkF6LoaderAD0efH0_pvM",
+                "moduleName": "NetworkImage",
+                "implicit": true,
+                "intro_Macosx": "10.15",
+                "intro_iOS": "13.0",
+                "intro_tvOS": "13.0",
+                "intro_watchOS": "6.0",
+                "declAttributes": [
+                  "Available",
+                  "Available",
+                  "Available",
+                  "Available"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:7SwiftUI17EnvironmentValuesV",
+        "mangledName": "$s7SwiftUI17EnvironmentValuesV",
+        "moduleName": "SwiftUICore",
+        "intro_Macosx": "10.15",
+        "intro_iOS": "13.0",
+        "intro_tvOS": "13.0",
+        "intro_watchOS": "6.0",
+        "declAttributes": [
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "OriginallyDefinedIn",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      }
+    ],
     "json_format_version": 8
   },
-  "ConstValues": []
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/Deprecations.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3089,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3824,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4797,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5769,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 572,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageCache.swift",
+      "kind": "IntegerLiteral",
+      "offset": 883,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 436,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 441,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 448,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 483,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 489,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 496,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 548,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "Dictionary",
+      "offset": 716,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2279,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2285,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2522,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/NetworkImageLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2563,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/URLSession+NetworkImage.swift",
+      "kind": "StringLiteral",
+      "offset": 805,
+      "length": 8,
+      "value": "\"Accept\""
+    },
+    {
+      "filePath": "\/Users\/sefeddinbassarac\/Developer\/swift-markdown-ui\/.build\/checkouts\/NetworkImage\/Sources\/NetworkImage\/URLSession+NetworkImage.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 9,
+      "value": "\"image\/*\""
+    }
+  ]
 }

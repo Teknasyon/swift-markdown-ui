@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "MarkdownUI"
-    s.version      = '2.4.9'
+    s.version      = '2.4.10'
     s.summary      = "This library includes swift-markdown-ui binary libraries."
     s.description  = "This library includes swift-markdown-ui and the libraries it requires."
     s.homepage     = "https://github.com/gonzalezreal/swift-markdown-ui"
